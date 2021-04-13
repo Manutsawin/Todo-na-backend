@@ -27,7 +27,7 @@ module.exports = async function loginService(req,res){
 
     if (checked) {
         
-        var scretKey = jwtConstants.secret;
+        var scretKey = 'asdkaujdklhfiashfeashoawdhsd';
 
         const payload = {
             'iss': 'konoe',
