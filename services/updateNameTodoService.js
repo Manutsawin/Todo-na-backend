@@ -1,7 +1,7 @@
 const {TodoModel} = require("../model");
 const {UserModel} = require("../model");
 const jwt = require('jsonwebtoken');
-import { jwtConstants } from '../constants';
+
 
 
 module.exports = async function updateNameTodoService(req,res){

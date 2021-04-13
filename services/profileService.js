@@ -2,7 +2,7 @@
 const bcrypt = require('bcrypt')
 const Users = require('../model/UserModel')
 const jwt = require('jsonwebtoken')
-import { jwtConstants } from '../constants';
+
 
 
 module.exports = async function profileService(req,res){
