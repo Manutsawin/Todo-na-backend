@@ -33,8 +33,7 @@ module.exports = async function loginService(req,res){
         var scretKey = constants.jwtScretKey;
 
         const payload = {
-            'iss': 'konoe',
-            'aud': 'everyone',
+            
             id: result.UserID,
             name: result.Name,
             role: result.Role
