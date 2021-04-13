@@ -1,6 +1,6 @@
 const Users = require('../model/UserModel')
 const jwt = require('jsonwebtoken')
-const jwtConstants = require("../constants")
+import { jwtConstants } from '../constants';
 
 
 

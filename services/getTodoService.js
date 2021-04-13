@@ -1,6 +1,6 @@
 const {TodoModel} = require("../model");
 const jwt = require('jsonwebtoken');
-const jwtConstants = require("../constants")
+import { jwtConstants } from '../constants';
 
 
 module.exports = async function getTodoService(data,res){

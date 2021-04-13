@@ -1,7 +1,7 @@
 const {UserModel} = require("../model");
 const bcrypt = require('bcrypt')
 const loginService = require("./loginService")
-const jwt = require('jsonwebtoken')
+
 
 module.exports = async function createUserService(data,res){
     

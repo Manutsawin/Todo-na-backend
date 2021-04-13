@@ -4,7 +4,7 @@ const Users = require('../model/UserModel')
 
 const jwt = require('jsonwebtoken')  // ใช้งาน jwt module
 // const fs = require('fs') // ใช้งาน file system module ของ nodejs
-const jwtConstants = require("../constants")
+import { jwtConstants } from '../constants';
 
 
 
