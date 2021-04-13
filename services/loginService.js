@@ -5,12 +5,15 @@ const Users = require('../model/UserModel')
 const jwt = require('jsonwebtoken')  // ใช้งาน jwt module
 // const fs = require('fs') // ใช้งาน file system module ของ nodejs
 
+const constants = require('../constants');
+
 
 
 
 module.exports = async function loginService(req,res){
    
-    
+    console.log(constants.jwtScretKey)
+
     const { UserID, Password } = await req
     
     const result = await Users.findOne({
