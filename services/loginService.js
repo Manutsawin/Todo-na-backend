@@ -30,7 +30,7 @@ module.exports = async function loginService(req,res){
 
     if (checked) {
         
-        var scretKey = 'asdkaujdklhfiashfeashoawdhsd';
+        var scretKey = constants.jwtScretKey;
 
         const payload = {
             'iss': 'konoe',
