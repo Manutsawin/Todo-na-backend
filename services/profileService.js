@@ -2,10 +2,12 @@
 const bcrypt = require('bcrypt')
 const Users = require('../model/UserModel')
 const jwt = require('jsonwebtoken')
+const jwtConstants = require("../constants")
+
 
 module.exports = async function profileService(req,res){
 
-    var scretKey = 'asdkaujdklhfiashfeashoawdhsd'
+    var scretKey =  jwtConstants.secret;
     var decoded = await jwt.verify(req,scretKey);
     const  UserID = decoded.id
     const result = await Users.findOne({

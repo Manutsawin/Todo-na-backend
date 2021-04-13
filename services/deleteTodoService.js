@@ -1,10 +1,11 @@
 const {TodoModel} = require("../model");
 const {UserModel} = require("../model");
 const jwt = require('jsonwebtoken');
+const jwtConstants = require("../constants")
 
 
 module.exports = async function deleteTodoService(data,res){
-    var scretKey = 'asdkaujdklhfiashfeashoawdhsd'
+    var scretKey = jwtConstants.secret;
     var decoded = await jwt.verify(data.token,scretKey);
     const  UserID = decoded.id
 

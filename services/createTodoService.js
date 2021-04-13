@@ -1,13 +1,15 @@
 const {TodoModel} = require("../model");
 const jwt = require('jsonwebtoken')
 const {UserModel} = require("../model");
+const jwtConstants = require("../constants")
+
 
 module.exports = async function createTodoService(data,res){
     
     
     const {token,taskName,time} = data
     
-    var scretKey = 'asdkaujdklhfiashfeashoawdhsd'
+    var scretKey = jwtConstants.secret;
     var decoded = await jwt.verify(token,scretKey);
     const  UserID = await decoded.id
     const result = await UserModel.findOne({

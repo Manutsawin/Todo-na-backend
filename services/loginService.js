@@ -4,6 +4,9 @@ const Users = require('../model/UserModel')
 
 const jwt = require('jsonwebtoken')  // ใช้งาน jwt module
 // const fs = require('fs') // ใช้งาน file system module ของ nodejs
+const jwtConstants = require("../constants")
+
+
 
 module.exports = async function loginService(req,res){
    
@@ -24,7 +27,7 @@ module.exports = async function loginService(req,res){
 
     if (checked) {
         
-        var scretKey = 'asdkaujdklhfiashfeashoawdhsd'
+        var scretKey = jwtConstants.secret;
 
         const payload = {
             'iss': 'konoe',
