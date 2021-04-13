@@ -12,7 +12,7 @@ const constants = require('../constants');
 
 module.exports = async function loginService(req,res){
    
-    console.log(constants.jwtScretKey)
+    
 
     const { UserID, Password } = await req
     
