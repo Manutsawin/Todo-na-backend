@@ -5,7 +5,7 @@ import { jwtConstants } from '../constants';
 
 
 module.exports = async function updateNameTodoService(req,res){
-    var scretKey = jwtConstants.secret;
+    var scretKey = 'asdkaujdklhfiashfeashoawdhsd';
     var decoded = await jwt.verify(req.query.token,scretKey);
     const  UserID = decoded.id
 

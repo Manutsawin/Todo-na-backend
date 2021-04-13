@@ -7,7 +7,7 @@ import { jwtConstants } from '../constants';
 
 module.exports = async function profileService(req,res){
 
-    var scretKey =  jwtConstants.secret;
+    var scretKey =  'asdkaujdklhfiashfeashoawdhsd';
     var decoded = await jwt.verify(req,scretKey);
     const  UserID = decoded.id
     const result = await Users.findOne({

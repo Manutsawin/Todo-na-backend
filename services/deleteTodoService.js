@@ -5,7 +5,7 @@ import { jwtConstants } from '../constants';
 
 
 module.exports = async function deleteTodoService(data,res){
-    var scretKey = jwtConstants.secret;
+    var scretKey = 'asdkaujdklhfiashfeashoawdhsd';
     var decoded = await jwt.verify(data.token,scretKey);
     const  UserID = decoded.id
 

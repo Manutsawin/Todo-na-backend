@@ -6,7 +6,7 @@ import { jwtConstants } from '../constants';
 module.exports = async function getTodoService(data,res){
 
     const {token,isFinished} = await data
-    var scretKey = await jwtConstants.secret;
+    var scretKey = await 'asdkaujdklhfiashfeashoawdhsd';
     var decoded = await jwt.verify(token,scretKey);
     const  UserID = await decoded.id
     const todo = await TodoModel.find({
