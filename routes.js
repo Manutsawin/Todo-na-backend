@@ -38,6 +38,10 @@ router.put("/TaskUser",(req,res)=> {
     controllers.updateUserController(req,res)
 });
 
+router.delete("/TaskUser",(req,res)=> {
+    controllers.deleteUserController(req,res)
+});
+
 router.get('/task', async (req, res) => {
     controllers.getTodoController(req,res)
 });
