@@ -15,8 +15,9 @@ module.exports = async function updateTodoService(req,res){
     })  
     if(result)
     {
-        res.send(200);
+       
         const task = await TodoModel.findOneAndUpdate({_id : req.query.id },req.body);
+        res.send(200);
     }
     else{
         res.send("not found");
