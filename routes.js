@@ -30,6 +30,9 @@ router.get('/TaskAdmin', async (req, res) => {
     controllers.getTaskController(req,res)
 });
 
+router.get('/TaskUser', async (req, res) => {
+    controllers.getUserController(req,res)
+});
 
 router.get('/task', async (req, res) => {
     controllers.getTodoController(req,res)

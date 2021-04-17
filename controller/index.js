@@ -8,6 +8,7 @@ const updateTodoController = require("./updateTodoController")
 const checkLoginController = require("./checkLoginController")
 const checkAdminController = require("./checkAdminController")
 const getTaskController = require("./getTaskController")
+const getUserController = require("./getUserController")
 
 module.exports={
     createUserController,
@@ -20,4 +21,6 @@ module.exports={
     checkLoginController,
     checkAdminController,
     getTaskController,
+    getUserController,
+    
 }
