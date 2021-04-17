@@ -10,7 +10,9 @@ module.exports = async function getTaskService(data,res){
     var decoded = await jwt.verify(token,scretKey);
     if(decoded.role=="Admin")
     {
-        const task = await TodoModel
+        const task = await TodoModel.find({
+            isFinished: false
+        })
         res.send(task);
     }
     else{
