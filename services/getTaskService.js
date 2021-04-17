@@ -5,13 +5,13 @@ const constants = require('../constants');
 
 module.exports = async function getTaskService(data,res){
 
-    const {token} = await data
+    const {token,isFinished} = await data
     var scretKey = await constants.jwtScretKey;
     var decoded = await jwt.verify(token,scretKey);
     if(decoded.role=="Admin")
     {
         const task = await TodoModel.find({
-            isFinished: false
+            isFinished: isFinished
         })
         res.send(task);
     }
