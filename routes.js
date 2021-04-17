@@ -34,6 +34,10 @@ router.get('/TaskUser', async (req, res) => {
     controllers.getUserController(req,res)
 });
 
+router.put("/TaskUser",(req,res)=> {
+    controllers.updateUserController(req,res)
+});
+
 router.get('/task', async (req, res) => {
     controllers.getTodoController(req,res)
 });
