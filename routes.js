@@ -22,6 +22,10 @@ router.post('/check', async (req, res) => {
    controllers.checkLoginController(req,res)
 });
 
+router.post('/isAdmin', async (req, res) => {
+    controllers.checkAdminController(req,res)
+ });
+
 
 router.get('/task', async (req, res) => {
     controllers.getTodoController(req,res)

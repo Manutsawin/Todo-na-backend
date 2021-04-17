@@ -6,6 +6,7 @@ const getTodoService = require("./getTodoService")
 const deleteTodoService = require("./deleteTodoService")
 const updateTodoService = require("./updateTodoService")
 const checkLoginService = require("./checkLoginService")
+const checkAdminService = require("./checkAdminService")
 
 module.exports = {
     createUserService,
@@ -15,4 +16,5 @@ module.exports = {
     deleteTodoService,
     updateTodoService,
     checkLoginService,
+    checkAdminService,
 }

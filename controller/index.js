@@ -6,6 +6,7 @@ const getTodoController = require("./getTodoController")
 const deleteTodoController = require("./deleteTodoController")
 const updateTodoController = require("./updateTodoController")
 const checkLoginController = require("./checkLoginController")
+const checkAdminController = require("./checkAdminController")
 
 module.exports={
     createUserController,
@@ -16,4 +17,5 @@ module.exports={
     deleteTodoController,
     updateTodoController,
     checkLoginController,
+    checkAdminController,
 }
