@@ -7,6 +7,7 @@ const deleteTodoController = require("./deleteTodoController")
 const updateTodoController = require("./updateTodoController")
 const checkLoginController = require("./checkLoginController")
 const checkAdminController = require("./checkAdminController")
+const getTaskController = require("./getTaskController")
 
 module.exports={
     createUserController,
@@ -18,4 +19,5 @@ module.exports={
     updateTodoController,
     checkLoginController,
     checkAdminController,
+    getTaskController,
 }

@@ -24,7 +24,11 @@ router.post('/check', async (req, res) => {
 
 router.post('/isAdmin', async (req, res) => {
     controllers.checkAdminController(req,res)
- });
+});
+
+router.get('/TaskAdmin', async (req, res) => {
+    controllers.getTaskController(req,res)
+});
 
 
 router.get('/task', async (req, res) => {
